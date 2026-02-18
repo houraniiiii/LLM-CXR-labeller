@@ -1,0 +1,15 @@
+numpy==2.2.6
+pandas==2.3.3
+PyYAML==6.0.3
+huggingface-hub==0.35.3
+torch==2.8.0
+vllm==0.11.0
+autoawq==0.2.7
+auto_gptq==0.7.1
+bitsandbytes==0.48.1
+compressed-tensors==0.11.0
+lm-format-enforcer==0.11.3
+outlines_core==0.2.11
+xgrammar==0.1.25
+openai>=1.63.0
+openai-harmony==0.0.4

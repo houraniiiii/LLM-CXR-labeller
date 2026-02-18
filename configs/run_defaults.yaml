@@ -1,0 +1,59 @@
+# Default run configuration derived from EXECUTION_PLAN.md sections 7-9.
+defaults:
+  seed: 42
+  k_shot: 0
+  max_new_tokens: 20000
+  outdir: results
+  limit: null
+  quant_mode_order:
+    - fp16
+    - int4
+
+datasets:
+  indiana:
+    default_input_context: both
+    allowed_input_contexts:
+      - impression
+      - both
+      - full
+  mimic:
+    default_input_context: both
+    allowed_input_contexts:
+      - impression
+      - both
+      - full
+  rexgradient:
+    default_input_context: both
+    allowed_input_contexts:
+      - impression
+      - both
+      - full
+
+few_shot:
+  allowed_shots:
+    - 0
+    - 5
+    - 10
+
+prompts:
+  default_variant: clinical_standard
+  variants:
+    - basic
+    - clinical_stepwise
+    - clinical_compact
+    - clinical_standard
+
+batching:
+  use_model_defaults: true  # honor batch sizes listed in models.jsonl unless overridden
+  auto_reduce_on_oom: true  # halve batch size on OOM and retry
+
+vllm:
+  tensor_parallel_size: 1
+  gpu_memory_utilization: 0.9
+  max_num_batched_tokens: null
+  swap_space_gb: 48
+  kv_cache_dtype: auto
+
+logging:
+  save_run_config: true
+  schema_violation_threshold: 0.01  # trigger warning if >1% parses fail
