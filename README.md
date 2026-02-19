@@ -99,12 +99,24 @@ python -m src.cli.ppe_retrieval --dataset all --split test --quant-mode int4 --m
 - Predictions: `results/preds/<dataset_split>/*.jsonl`
 - Logs: `results/logs/*.log`
 
-## Figure
+## Results
+
+<p align="center">
+  <img src="figures/fig5_macro_f1_distribution_by_model_dev.png" alt="Macro-F1 distribution by model on dev split" width="900">
+</p>
 
 <p align="center">
   <img src="figures/figure2_macro_f1_vs_rpm_test.png" alt="Macro-F1 vs RPM on test split" width="900">
 </p>
 <p align="center"><em>n=1250</em></p>
+
+<p align="center">
+  <img src="figures/fig7_macro_f1_distribution_by_model_test.png" alt="Macro-F1 distribution by model on test split" width="900">
+</p>
+
+### Table
+
+- [table7_test_gptoss_k5_stepwise](figures/table7_test_gptoss_k5_stepwise.docx)
 
 ---
 
