@@ -9,7 +9,7 @@
 
 ## Abstract
 
-This pipeline turns free-text chest X-ray reports into the standard 14 CXR finding labels used in clinical benchmarking. It lets you compare different open LLMs, prompt styles, quantization levels, and few-shot setups in one consistent workflow, so you can understand the quality, speed, and efficiency tradeoffs before selecting a deployment configuration.
+This pipeline turns free-text chest X-ray reports into the standard 14 CXR finding labels used in clinical benchmarking. With strong prompting, MedGamma 27B and OSS-20B achieve higher F1 on both dev and test than CheXbert, and quantized MedGemma 27B delivers major speedups while keeping performance practical. The workflow lets you compare different open LLMs, prompt styles, quantization levels, and few-shot setups in one consistent system so you can select the right quality-speed-efficiency tradeoff for deployment.
 
 Text-only chest X-ray (CXR) report labeling pipeline for CheXpert-style 14-label prediction, with zero-shot and retrieval-based few-shot inference using open-weight LLMs.
 
