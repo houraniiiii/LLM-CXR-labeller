@@ -7,6 +7,10 @@
   <img src="https://img.shields.io/badge/Task-CXR%20report%20labeling-0A7E8C" alt="Task">
 </p>
 
+## Abstract
+
+This pipeline turns free-text chest X-ray reports into the standard 14 CXR finding labels used in clinical benchmarking. It lets you compare different open LLMs, prompt styles, quantization levels, and few-shot setups in one consistent workflow, so you can understand the quality, speed, and efficiency tradeoffs before selecting a deployment configuration.
+
 Text-only chest X-ray (CXR) report labeling pipeline for CheXpert-style 14-label prediction, with zero-shot and retrieval-based few-shot inference using open-weight LLMs.
 
 ## What this repo does
@@ -115,5 +119,5 @@ python -m src.cli.ppe_retrieval --dataset all --split test --quant-mode int4 --m
 </p>
 
 <p>
-  <img src="Simplepod%20-%20kolor_czarny.png" alt="SimplePod logo" width="220">
+  <img src="figures/simplepod-logo-black.png" alt="SimplePod logo" width="220">
 </p>
