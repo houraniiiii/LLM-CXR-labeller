@@ -116,7 +116,22 @@ python -m src.cli.ppe_retrieval --dataset all --split test --quant-mode int4 --m
 
 ### Table
 
-- [table7_test_gptoss_k5_stepwise](figures/table7_test_gptoss_k5_stepwise.docx)
+| Label | F1 | F1 - CheXbert F1 |
+| --- | ---: | ---: |
+| No Finding | 0.860 | +0.275 |
+| Enl. Cardiomediastinum | 0.419 | -0.011 |
+| Cardiomegaly | 0.851 | +0.029 |
+| Lung Opacity | 0.814 | +0.055 |
+| Lung Lesion | 0.805 | +0.112 |
+| Edema | 0.916 | +0.035 |
+| Consolidation | 0.906 | +0.114 |
+| Pneumonia | 0.924 | +0.120 |
+| Atelectasis | 0.935 | +0.030 |
+| Pneumothorax | 0.950 | +0.115 |
+| Pleural Effusion | 0.933 | +0.015 |
+| Pleural Other | 0.719 | +0.119 |
+| Fracture | 0.779 | +0.118 |
+| Support Devices | 0.882 | +0.086 |
 
 ---
 
